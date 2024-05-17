@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<title>Main</title>
+<head></head>
+
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+body{
+height: 100%;
+background-color: aqua;
+}
+/* header */
+.navbar{
+padding: 20px 5%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+background-color: #add8e6;
+box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+.navbar .logo h1{
+color: #fff;
+font-family:  'Calligraffitti', cursive;
+}
+.navbar .menu li{
+list-style: none;
+display: inline-block;
+margin: 0 7;
+position: relative;
+}
+.navbar .menu li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-size: 10px;
+font-weight: bold;
+}
+.navbar .menu li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #fff;
+position: absolute;
+left: 0;
+bottom: -5;
+transition: 0.5s;
+}
+.navbar .menu li:hover::after{
+width: 100%;
+}
+.h1{
+text-align: center;
+padding-bottom: 100px;
+padding-top: 100px;
+}
+.Title{
+    font-size: 10px;
+    color: #fff;
+}
+
+.Pics{
+    height: 100%;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),#960023),url(laptop1.webp);
+}
+
+
+.bbody{
+    width: 100%;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+text-align: center;
+color: #fff
+}
+.bbody h1{
+font-size: 100px;
+font-style: italic;
+font-style: bold;
+margin: 10px;
+font-family: 'Calligraffitti', cursive;
+
+}
+
+
+    button{
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius: 25px;
+font-weight: bold;
+
+color:black;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+border: none;
+}
+
+
+
+</style>
+<Body>
+    
+    <script language ="JavaScript">
+
+    </script>
+
+    <nav class="navbar">
+        <div class="logo"><h1>EHub</h1></div>
+        <div class="Title"><h1>HomePage</h1></div>
+        <ul class="menu">
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        </nav>
+
+       <div class = "Pics">
+    
+       </div>
+       <div class = "bbody">
+        <h1>Ehub</h1>
+        <p>A Shoppping Website of Gadgets</p>
+        <a href = "Product.html"><button><span>Products</span></button></a>
+     
+
+       </div>
+           
+       
+</Body>
+</html>
